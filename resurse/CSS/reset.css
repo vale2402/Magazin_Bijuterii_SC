@@ -108,10 +108,9 @@ sup {
     top: -0.5em;
 }
 
-/* 6. Liste - Resetarea bullet-urilor (Cerință bonus) */
 ul,
 ol {
-    list-style: none; /* Scoatem bullet-urile implicite */
+    list-style: none;
     padding-left: 0;
 }
 
