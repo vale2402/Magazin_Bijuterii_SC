@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. html și body — singurele cu unități fixe */
+html {
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 3. Elemente block semantice */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* 4. Text — unități relative */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Ierarhia titlurilor în unități relative (em) */
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1em; }
+h6 { font-size: 0.85em; }
+
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+dd,
+dt,
+address,
+cite,
+q {
+    font-size: 1em;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* 5. Bold și italic resetate și redefinite logic */
+b,
+strong {
+    font-weight: bolder;
+    font-style: normal;
+}
+
+i,
+em,
+dfn {
+    font-style: italic;
+    font-weight: normal;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+sub,
+sup {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+/* 6. Liste - Resetarea bullet-urilor (Cerință bonus) */
+ul,
+ol {
+    list-style: none; /* Scoatem bullet-urile implicite */
+    padding-left: 0;
+}
+
+li {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+/* 7. Linkuri */
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+/* 8. Media */
+img,
+video,
+audio,
+iframe,
+embed,
+object {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    vertical-align: middle;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+
+/* 9. Tabele */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+    font-size: 1em; /* Unitate relativă */
+}
+
+caption {
+    caption-side: bottom;
+    text-align: center;
+    font-size: 0.85em;
+}
+
+/* 10. Formulare */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 1em;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    cursor: pointer;
+    appearance: button;
+    -webkit-appearance: button;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+}
+
+legend {
+    padding: 0;
+    display: block;
+    font-size: 1em;
+}
+
+/* 11. Elemente interactive */
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+    cursor: pointer;
+}
