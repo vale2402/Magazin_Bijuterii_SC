@@ -1,0 +1,187 @@
+/* bonus 2: animatia barelor hamburger */
+@keyframes aparitie_bare {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px) scale(0.5);
+        background-color: transparent;
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateX(10px) scale(1.1);
+        background-color: var(--culoare-contur-deschis); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+        background-color: var(--culoare-fundal); 
+    }
+}
+
+nav {
+    position: relative;
+}
+
+#ch-meniu {
+    display: none;
+
+    &:checked ~ ul.meniu {
+        transform: rotate(0deg); 
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+#hamburger {
+    display: block;
+    cursor: pointer;
+    width: 40px; 
+    height: 34px; 
+    position: relative; 
+    margin: 10px;
+    /* bonus 1: icon hamburger */
+    span {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        background-color: var(--culoare-fundal);
+        border-radius: 3px;
+        left: 0;
+        
+        opacity: 0; 
+        animation: aparitie_bare 0.6s ease-in-out forwards;
+        
+        &:nth-child(1) { top: 2px; }
+        &:nth-child(2) { top: 14px; }
+        &:nth-child(3) { top: 26px; }
+        /* bonus 3 */
+        $t: 300; 
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                animation-delay: #{$i * $t}ms; 
+            }
+        }
+    }
+}
+
+
+
+ul.meniu {
+    display: block !important; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--culoare-fundal);
+    z-index: 100;
+    
+    transform-origin: top left; 
+    transform: rotate(-90deg);  
+    opacity: 0;                 
+    visibility: hidden;         
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s !important; 
+
+    li {
+        display: block !important;
+        width: 100% !important; 
+        height: auto !important; 
+        line-height: normal !important; 
+        box-sizing: border-box;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important; 
+
+        .text-icon,
+        .imag-icon {
+            display: inline-block;
+            padding: 15px 10px; 
+            vertical-align: middle;
+            height: auto !important; 
+            color: var(--culoare-text); 
+            transition: color 0.2s ease-in-out !important; 
+        }
+
+        &:hover > ul {
+            transform: scaleY(1);
+            max-height: 800px;
+        }
+    }
+
+    > li {
+        border-bottom: 1px solid var(--culoare-contur);
+        padding: 0; 
+        text-align: center;
+
+        &::before {
+            display: none !important; 
+        }
+
+        > a {
+            width: 100%; 
+            padding: 0; 
+            display: block;
+            text-decoration: none;
+        }
+
+        &:first-child {
+            .text-icon {
+                display: none !important;
+            }
+            .imag-icon {
+                font-size: 1.3rem;
+            }
+        }
+
+        &:hover {
+            background-color: var(--culoare-submeniu-hover-bg) !important;
+
+            > a,
+            > .text-icon,
+            > .imag-icon,
+            > a .text-icon,
+            > a .imag-icon {
+                color: var(--culoare-submeniu-hover-text) !important;
+            }
+        }
+    }
+
+    ul {
+        display: block !important; 
+        position: static !important; 
+        animation: none !important; 
+        background-color: var(--culoare-fundal) !important;
+        
+        transform-origin: top !important; 
+        transform: scaleY(0);
+        max-height: 0;
+        overflow: hidden;
+        transition: transform 0.4s ease-in-out, max-height 0.4s ease-in-out !important;
+
+        li {
+            border-top: 1px solid var(--culoare-contur) !important; 
+            border-bottom: none;
+            text-align: left;
+            padding: 0; 
+            overflow: hidden; 
+            background-color: var(--culoare-fundal) !important; 
+
+            &:first-child {
+                border-top: none !important;
+            }
+
+            a {
+                display: block; 
+                padding: 12px 15px 12px 40px !important; 
+                color: var(--culoare-text) !important;
+                text-decoration: none;
+                transition: color 0.2s ease-in-out !important;
+            }
+
+            &:hover {
+                background-color: var(--culoare-submeniu-hover-bg) !important;
+
+                > a {
+                    color: var(--culoare-submeniu-hover-text) !important; 
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,114 @@
+$nul: 0;
+$durata-bara: 0.4s;
+$durata-submeniu: 0.5s;
+
+nav{
+    background-color: var(--culoare-contur);
+}
+
+ul.meniu, ul.meniu ul{
+    list-style-type: none;
+    padding: $nul;
+    margin: $nul;
+}
+
+%nu_afiseaza{
+    display: none;
+}
+
+#hamburger, #ch-meniu{
+    @extend %nu_afiseaza;
+}
+
+.text-icon, .imag-icon{
+    display: inline-block;
+}
+
+ul.meniu{
+    display: flex;
+    position: relative;
+}
+
+ul.meniu {
+    ul{
+        @extend %nu_afiseaza;
+        animation: animatie_submeniu $durata-submeniu ease forwards;
+        transform-origin: center center;
+
+        li{
+            width: var(--latime-buton);
+            height: calc(var(--inaltime-buton) * 0.75);
+            line-height: calc(var(--inaltime-buton) * 0.75);
+        }
+    }
+
+    li{
+        cursor: pointer;
+        width: var(--latime-buton);
+        height: var(--inaltime-buton);
+        background-color: var(--culoare-fundal);
+        border: 1px solid var(--culoare-contur);
+        color: black;
+        text-align: center;
+        line-height: var(--inaltime-buton);
+        position: relative;
+        transition: all 0.5s linear;
+    }
+}
+
+@keyframes animatie_submeniu {
+    0%{
+        opacity: 0;
+        transform: scaleY(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+ul.meniu > li:hover ul{
+    display: block;
+    position: absolute;
+    z-index: 10;
+}
+
+ul.meniu a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+ul.meniu > li{
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-image: linear-gradient(to right, var(--culoare-bara), transparent, transparent);
+        background-size: 250% 100%;
+        background-position: right center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transition: background-position $durata-bara linear, opacity $durata-bara linear;
+    }
+
+    &:hover::before{
+        background-position: left center;
+        opacity: 1;
+    }
+}
+
+ul.meniu ul li:hover{
+    background-color: var(--culoare-submeniu-hover-bg);
+    color: var(--culoare-submeniu-hover-text);
+}
+
+ul.meniu li:hover{
+    background-color: var(--culoare-fundal);
+    color: black;
+}

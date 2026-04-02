@@ -1,0 +1,137 @@
+nav {
+    position: relative;
+}
+
+#ch-meniu {
+    display: none;
+}
+
+#hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 2.2rem;
+    padding: 10px;
+    color: var(--culoare-fundal);
+}
+
+ul.meniu {
+    display: block !important; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--culoare-fundal);
+    z-index: 100;
+    
+    transform-origin: top left; 
+    transform: rotate(-90deg);  
+    opacity: 0;                 
+    visibility: hidden;         
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s !important; 
+}
+
+#ch-meniu:checked ~ ul.meniu {
+    transform: rotate(0deg); 
+    opacity: 1;
+    visibility: visible;
+}
+
+ul.meniu li {
+    display: block !important;
+    width: 100% !important; 
+    height: auto !important; 
+    line-height: normal !important; 
+    box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out !important; 
+}
+
+ul.meniu > li {
+    border-bottom: 1px solid var(--culoare-contur);
+    padding: 0; 
+}
+
+ul.meniu > li::before {
+    display: none !important; 
+}
+
+ul.meniu li .text-icon{
+    display: none;
+}
+ul.meniu li .imag-icon{
+    display: inline-block;
+}
+ul.meniu li .text-icon,
+ul.meniu li .imag-icon {
+    padding: 15px 10px; 
+    vertical-align: middle;
+    height: auto !important; 
+    color: var(--culoare-text); 
+    transition: color 0.2s ease-in-out !important; 
+}
+
+ul.meniu > li > a {
+    width: 100%; 
+    padding: 0; 
+    display: block;
+    text-decoration: none;
+}
+
+ul.meniu > li:hover {
+    background-color: var(--culoare-submeniu-hover-bg) !important;
+}
+
+ul.meniu > li:hover > a,
+ul.meniu > li:hover > .text-icon,
+ul.meniu > li:hover > .imag-icon,
+ul.meniu > li:hover > a .text-icon,
+ul.meniu > li:hover > a .imag-icon {
+    color: var(--culoare-submeniu-hover-text) !important;
+}
+
+ul.meniu ul {
+    display: block !important; 
+    position: static !important; 
+    animation: none !important; 
+    background-color: var(--culoare-fundal) !important;
+    
+    transform-origin: top !important; 
+    transform: scaleY(0);
+    max-height: 0;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out, max-height 0.4s ease-in-out !important;
+}
+
+ul.meniu li:hover > ul {
+    transform: scaleY(1);
+    max-height: 800px;
+}
+
+ul.meniu ul li {
+    border-top: 1px solid var(--culoare-contur) !important; 
+    border-bottom: none;
+    text-align: left;
+    padding: 0; 
+    overflow: hidden; 
+    background-color: var(--culoare-fundal) !important; 
+}
+
+ul.meniu ul li:first-child {
+     border-top: none !important;
+}
+
+ul.meniu ul li a {
+    display: block; 
+    padding: 12px 15px 12px 40px !important; 
+    color: var(--culoare-text) !important;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out !important;
+}
+
+ul.meniu ul li:hover {
+    background-color: var(--culoare-submeniu-hover-bg) !important;
+}
+
+ul.meniu ul li:hover > a {
+    color: var(--culoare-submeniu-hover-text) !important; 
+}
+
