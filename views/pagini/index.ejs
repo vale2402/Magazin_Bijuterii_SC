@@ -19,35 +19,62 @@
                     <h2>Bine ati venit!</h2>
                     <p class="subtitlu">Prezentarea magazinului de bijuterii S&C</p>
                 </hgroup>
-                <!-- <button class="btn btn-primary">Bootstarp</button> -->
+
                 <p class="intro">Bine ați venit în universul S&C, locul unde bijuteriile nu sunt doar accesorii,
-            ci expresii ale personalității dumneavoastră. Oferim bijuterii de calitate și seturi de bijuterii pentru cadouri perfecte. Specializați în bijuterii din aur de 
-            14K și argint fin, oferim colecții atent curatate pentru momentele care contează:</p>
-                
-                <div class="intro-oferte"><div>Cercei</div><div>Coliere</div><div>Brățări</div><div>Inele</div><div>Broșe</div></div>
+                    ci expresii ale personalității dumneavoastră. Oferim bijuterii de calitate și seturi de bijuterii
+                    pentru cadouri perfecte. Specializați în bijuterii din aur de
+                    14K și argint fin, oferim colecții atent curatate pentru momentele care contează:</p>
+
+                <div class="intro-oferte">
+                    <div>Cercei</div>
+                    <div>Coliere</div>
+                    <div>Brățări</div>
+                    <div>Inele</div>
+                    <div>Broșe</div>
+                </div>
                 <p class="anunt intro"><em>O primavara frumoasa!</em> Va oferim un martisor de 1 martie.</p>
                 <div id="dv-prezentare-1">
                     <div id="dv-prezentare">
-                    <picture>
-                        <!-- il ia pe primul care se potriveste cu query-ul din media-->
-                        <source srcset="/resurse/imagini/Martisor_ghiocel_700px.jpg" media="(max-width:700px)"/>
-                        <source srcset="/resurse/imagini/Martisor_ghiocel_1200px.jpg" media="(max-width:1200px)"/>
-                        <img src="/resurse/imagini/Martisor_ghiocel.jpeg" alt="Martisor ghiocel" width="300"/>
-                    </picture>
+                        <picture>
+                            <!-- il ia pe primul care se potriveste cu query-ul din media-->
+                            <source srcset="/resurse/imagini/Martisor_ghiocel_700px.jpg" media="(max-width:700px)" />
+                            <source srcset="/resurse/imagini/Martisor_ghiocel_1200px.jpg" media="(max-width:1200px)" />
+                            <img src="/resurse/imagini/Martisor_ghiocel.jpeg" alt="Martisor ghiocel" width="400" />
+                        </picture>
+                        <picture>
+                            <img style="width:400px" class="martisoare" src="/resurse/imagini/Martisor_trandafir.jpeg"
+                                alt="Martisor_trandafir" title="Un martisor trandafir.">
+                        </picture>
+                    </div>
                 </div>
-            </div>
-            <hr class="martisor-trandafir"/>
-            <div id="container-video">
-                <img style="width:35%" class="martisoare" src="/resurse/imagini/Martisor_trandafir.jpeg" alt="Martisor_trandafir" title="Un martisor trandafir.">
-            </div>
             </section>
+
+            <section id="video-prezentare">
+                <h2>Prezentare Colecție</h2>
+                <div id="container-video-vtt">
+                    <video id="video-vtt" controls poster="/resurse/imagini/bijuterii.png" preload="metadata">
+                        <source src="/resurse/video/video-personalizat.mp4" type="video/mp4">
+                        <source src="/resurse/video/video-personalizat.ogv" type="video/ogg">
+            
+                        <track src="/resurse/video/tracks/captions-ro.vtt" kind="subtitles" srclang="ro" label="Română" default>
+                        <track src="/resurse/video/tracks/captions-en.vtt" kind="subtitles" srclang="en" label="English">
+            
+                        Browserul tău nu suportă tag-ul video.
+                    </video>
+                </div>
+            </section>
+
             <section id="promotii">
                 <h2>Promoții și oferte</h2>
                 <article>
                     <h3 class="titlu">Super ofertă de primavara!</h3>
-                    <p><b>Magazinul de bijuterii S&C</b> oferă <b>reduceri de <s>10%</s> <ins>20%</ins></b> pentru toate produsele cumpărate in perioada 1-6 martie.</p>
-                    <p>Oferta este valabilă doar pentru comenziile din Bucuresti facute la <abbr title="Magazinul de bijuterii S&C">S&C</abbr>.</p>
-                    <p>Orice bijuterie cumparata la noi va fi marcata ca un punct in sistemul nostru de fidelitate. In cazul în care cumpărați mai mult de douazeci de <b>puncte</b> ,primiți si un card de fidelitate care aduce promotii unice!</p>
+                    <p><b>Magazinul de bijuterii S&C</b> oferă <b>reduceri de <s>10%</s> <ins>20%</ins></b> pentru toate
+                        produsele cumpărate in perioada 1-6 martie.</p>
+                    <p>Oferta este valabilă doar pentru comenziile din Bucuresti facute la <abbr
+                            title="Magazinul de bijuterii S&C">S&C</abbr>.</p>
+                    <p>Orice bijuterie cumparata la noi va fi marcata ca un punct in sistemul nostru de fidelitate. In
+                        cazul în care cumpărați mai mult de douazeci de <b>puncte</b> ,primiți si un card de fidelitate
+                        care aduce promotii unice!</p>
                 </article>
                 <article>
                     <h3>Ofertă pachet</h3>
@@ -59,54 +86,65 @@
                         <li>Livrare <i>gratis</i></li>
                         <li>Gratis: o felicitare cu imaginea magazinului S&C</li>
                     </ol>
-                    
+
                 </article>
                 <article>
                     <h3>Bijuterii pentru 8 martie</h3>
                     <p>GHID inedit de cadouri de 1 si 8 Martie pentru EA</p>
-                    <p>A inceput numaratoarea inversa pentru una dintre cele mai frumoase si asteptate perioade ale anului: luna Martie, cea in care celebram femeia si debutul oficial al sezonului cald.</p>
+                    <p>A inceput numaratoarea inversa pentru una dintre cele mai frumoase si asteptate perioade ale
+                        anului: luna Martie, cea in care celebram femeia si debutul oficial al sezonului cald.</p>
                 </article>
                 <article>
                     <h3>Bijuterii pentru zile de nastere</h3>
-                    <p>Bijuteriile sunt acel cadou simbolic pe care îți dorești să-l primești oricând. Iar ziua de naștere e momentul care aduce un plus de semnificație.</p>
+                    <p>Bijuteriile sunt acel cadou simbolic pe care îți dorești să-l primești oricând. Iar ziua de
+                        naștere e momentul care aduce un plus de semnificație.</p>
                     <ol>
-                        <li>Aveti la dispozitie o gama larga de set-uri care pot fi personalizate intr-un cadou unic.</li>
-                        <li>Oferim si o gama de <i lang="en"><abbr title="Do-It-Yourself">DIY</abbr></i>, unde oferim ocazia de a crea propria bijuterie <i lang="en">handmade</i>.</li>
+                        <li>Aveti la dispozitie o gama larga de set-uri care pot fi personalizate intr-un cadou unic.
+                        </li>
+                        <li>Oferim si o gama de <i lang="en"><abbr title="Do-It-Yourself">DIY</abbr></i>, unde oferim
+                            ocazia de a crea propria bijuterie <i lang="en">handmade</i>.</li>
                     </ol>
                 </article>
                 <article>
                     <h3>Bijuterii de Dragobete</h3>
-                    <p>Dragobetele este momentul perfect pentru a celebra iubirea cu un cadou simbolic, iar bijuteriile sunt printre cele mai apreciate alegeri.</p>
-                    <dl><dt>Dragobete sau Valentine's Day</dt><dd> (ocazia pentru a celebra iubirea)</dd></dl>
+                    <p>Dragobetele este momentul perfect pentru a celebra iubirea cu un cadou simbolic, iar bijuteriile
+                        sunt printre cele mai apreciate alegeri.</p>
+                    <dl>
+                        <dt>Dragobete sau Valentine's Day</dt>
+                        <dd> (ocazia pentru a celebra iubirea)</dd>
+                    </dl>
                 </article>
                 <article>
                     <h3>Inele de logodna</h3>
                     <p>Simboluri ale începuturilor și ale promisiunilor ce vor dura o viață.</p>
                     <p>Mai jos am atasat o ecuatie generala de calcul al pretului unui inel de logodna:</p>
-                    <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                        <mspace width="0.5em"/>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
                         <mrow>
-                        <msub>
-                            <mi>Pret</mi>
-                            <mn>Total</mn></msub>
-                        <mo>&equals;</mo>
-                        <mo>(</mo>
-                        <msub>
-                            <mi>Pret</mi>
-                            <mn>Metal</mn></msub>
-                        <mo>&plus;</mo>
-                        <msub>
-                            <mi>Pret</mi>
-                            <mn>Diamant</mn></msub>
-                        <mo>&plus;</mo>
-                        <msub>
-                            <mi>Pret</mi>
-                            <mn>Pietre_secundare</mn></msub>
-                        <mo>&plus;</mo>
-                        <mi>Manopera</mi>
-                        <mo>)</mo>
-                        <mo>&times;</mo>  
-                        <mi>TVA</mi>
+                            <msub>
+                                <mi>Pret</mi>
+                                <mn>Total</mn>
+                            </msub>
+                            <mo>&equals;</mo>
+                            <mo>(</mo>
+                            <msub>
+                                <mi>Pret</mi>
+                                <mn>Metal</mn>
+                            </msub>
+                            <mo>&plus;</mo>
+                            <msub>
+                                <mi>Pret</mi>
+                                <mn>Diamant</mn>
+                            </msub>
+                            <mo>&plus;</mo>
+                            <msub>
+                                <mi>Pret</mi>
+                                <mn>Pietre_secundare</mn>
+                            </msub>
+                            <mo>&plus;</mo>
+                            <mi>Manopera</mi>
+                            <mo>)</mo>
+                            <mo>&times;</mo>
+                            <mi>TVA</mi>
                         </mrow>
                     </math>
                 </article>
@@ -138,7 +176,7 @@
                         <li>perle cu pandandiv din aur</li>
                     </ul>
                 </section>
-                
+
                 <section>
                     <h3>Inele</h3>
                     <p>Acestea au o semnificatie mare in viata tuturor, cum ar fi inele:</p>
@@ -150,255 +188,300 @@
                     </ul>
                 </section>
             </section>
+
+            <section id="statistici-magazin">
+                <h2>Informații și Statistici</h2>
+
+                <div class="statistica">
+                    <p>
+                        <strong>Rating-ul clienților pentru Colecția de Aur 14K:</strong> 4.8 din 5 stele. <br>
+                        Suntem mândri de calitatea pe care o oferim!
+                    </p>
+                    <meter min="0" max="5" low="2.5" high="4" optimum="5" value="4.8" title="Rating: 4.8/5">
+                        4.8/5
+                    </meter>
+                </div>
+
+                <br>
+
+                <div class="statistica">
+                    <p>
+                        <strong>Stoc Colecția Mărțișoare 2026:</strong> Grăbiți-vă, stocul se epuizează rapid!
+                    </p>
+                    <meter min="0" max="100" low="20" high="80" optimum="100" value="12"
+                        title="Stoc limitat: 12 bucăți rămase">
+                        12%
+                    </meter>
+                </div>
+            </section>
+
             <section id="orar">
-    <h2>Orar Suport și Procesare Comenzi</h2>
-    <table id="tab-orar">
-    <caption>Orarul departamentelor de suport și logistică S&C</caption>
-        <thead>
-            <tr>
-                <th>Cod</th>
-                <th>Perioadă</th>
-                <th>Zi</th>
-                <th>Suport Clienți</th>
-                <th>Pauză</th>
-                <th>Procesare Colete</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>L-V</td>
-                <td rowspan="5">Zile<br/>Lucrătoare</td>
-                <td>Luni</td>
-                <td>09:00 - 13:00</td>
-                <td>13:00 - 14:00</td>
-                <td>14:00 - 18:00</td>
-            </tr>
-            <tr>
-                <td>L-V</td>
-                <td>Marți</td>
-                <td>09:00 - 13:00</td>
-                <td>13:00 - 14:00</td>
-                <td>14:00 - 18:00</td>
-            </tr>
-            <tr>
-                <td>L-V</td>
-                <td>Miercuri</td>
-                <td>09:00 - 13:00</td>
-                <td>13:00 - 14:00</td>
-                <td>14:00 - 18:00</td>
-            </tr>
-            <tr>
-                <td>L-V</td>
-                <td>Joi</td>
-                <td>09:00 - 13:00</td>
-                <td>13:00 - 14:00</td>
-                <td>14:00 - 18:00</td>
-            </tr>
-            <tr>
-                <td>L-V</td>
-                <td>Vineri</td>
-                <td>09:00 - 13:00</td>
-                <td>13:00 - 14:00</td>
-                <td>14:00 - 16:30</td>
-            </tr>
-            <tr>
-                <td>S-D</td>
-                <td rowspan="2">Weekend</td>
-                <td>Sâmbătă</td>
-                <td>10:00 - 14:00</td>
-                <td>Fără pauză</td>
-                <td>Doar preluare online</td>
-            </tr>
-            <tr>
-                <td>S-D</td>
-                <td>Duminică</td>
-                <td>Închis</td>
-                <td>-</td>
-                <td>Doar preluare online</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="6">Site-ul primește comenzi 24/7. Orarul de mai sus este valabil exclusiv pentru asistența telefonică și predarea fizică a coletelor către firmele de curierat.</td>
-            </tr>
-        </tfoot>
-    </table>
-    <section id="certificat-preview">
-    <h2>Certificat de Garanție și Autenticitate</h2>
-    <p>Mai jos puteți vedea certificatul care însoțește fiecare bijuterie S&C:</p>
-    <embed src="/resurse/documente/Certificat_Garantie.pdf" type="application/pdf" width="500" height="700" />
-    </section> 
-</section>
-            <figure id="fig1" class="fg-img">
-                <img src="/resurse/imagini/Bratari_albastre.jpeg" alt="Bratari_albastre" width="400">
-                <figcaption>Bratari albastre</figcaption>
-            </figure>
-            <figure id="fig2" class="fg-img">
-            <img src="/resurse/imagini/Bratari_mov.jpeg" alt="Bratari_mov" width="400">
-            <figcaption>Bratari mov</figcaption>
-            </figure>
-            <figure  id="fig3" class="fg-img">
-            <img src="/resurse/imagini/Bratari_inimi.jpeg" alt="Bratari_inimi" width="400">
-            <figcaption>Bratari inimi</figcaption>
-            </figure>
-            <figure  id="fig4">
-            <img src="/resurse/imagini/Bratari_pietre_semipretioase.jpeg" alt="Bratari_pietre_semipretioase" width="400">
-            <figcaption>Bratari pietre semipretioase</figcaption>
-            </figure>
-    <section id="anunturi">
-    <h2 class="fg-img">Evenimente și Anunțuri</h2>
-    <ul>
-        <li>
-            <time datetime="2026-02-24T10:00">24 februarie 2026, ora 10:00</time>, <b>Pregătiri de Mărțișor</b> - Ne pregătim intens pentru luna mărțișorului! Fiți cu ochii pe noi pentru noile modele de broșe și brățări cu șnur roșu.
-        </li>
-        <li>
-            <time datetime="2026-01-15T12:00">15 ianuarie 2026, ora 12:00</time>, <b>Rezultate Studiu S&C</b> - <strong>Studiile au arătat că achiziționarea unei bijuterii noi crește nivelul de fericire. E adevărat că sunt doar studiile noastre, dar detaliile nu mai contează atunci când strălucești.</strong>
-        </li>
-        <li>
-            <time datetime="2026-01-01T00:00">1 ianuarie 2026, ora 00:00</time>, <b>Revelion S&C</b> - Un an nou fericit, plin de momente prețioase și amintiri de neuitat alături de S&C!
-        </li>
-        <li>
-            <time datetime="2025-11-15T08:00">15 noiembrie 2025, ora 08:00</time>, <b>Black Friday</b> - Dăm startul reducerilor de toamnă la toată colecția din aur de 14K.
-        </li>
-        <li>
-            <time datetime="2025-09-01T14:30">1 septembrie 2025, ora 14:30</time>, <b>Lansare Colecție Nouă</b> - Am lansat noua colecție de brățări <i lang="en">handmade</i> cu pietre semiprețioase.
-        </li>
-        <li>
-            <time datetime="2025-06-05T11:00">5 iunie 2025, ora 11:00</time>, <b>Sfatul Zilei</b> - Nu avem noutăți majore, doar voiam să vă reamintim că un accesoriu bine ales vă poate schimba toată ziua.
-        </li>
-        <li>
-            <time datetime="2025-04-10T16:00">10 aprilie 2025, ora 16:00</time>, <b>Extindere Portofoliu</b> - Am adăugat o nouă secțiune de inele și verighete pe site.
-        </li>
-        <li>
-            <time datetime="2025-02-10T09:00">10 februarie 2025, ora 09:00</time>, <b>Valentine's Day</b> - Am pregătit seturi speciale de bijuterii din argint pentru Valentine's Day.
-        </li>
-        <li>
-            <time datetime="2024-11-20T10:00">20 noiembrie 2024, ora 10:00</time>, <b>Serviciu Nou</b> - Am introdus serviciul premium de împachetare pentru cadouri surpriză livrate direct la domiciliu.
-        </li>
-        <li>
-            <time datetime="2024-10-01T09:00">1 octombrie 2024, ora 09:00</time>, <b>Marea Deschidere</b> - Magazinul online S&C este oficial deschis! Bine ați venit în universul nostru.
-        </li>
-    </ul>
-</section>
+                <h2>Orar Suport și Procesare Comenzi</h2>
+                <div class="container-tabel">
+                <table id="tab-orar">
+                    <caption>Orarul departamentelor de suport și logistică S&C</caption>
+                    <thead>
+                        <tr>
+                            <th>Cod</th>
+                            <th>Perioadă</th>
+                            <th>Zi</th>
+                            <th>Suport Clienți</th>
+                            <th>Pauză</th>
+                            <th>Procesare Colete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>L-V</td>
+                            <td rowspan="5">Zile<br />Lucrătoare</td>
+                            <td>Luni</td>
+                            <td>09:00 - 13:00</td>
+                            <td>13:00 - 14:00</td>
+                            <td>14:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>L-V</td>
+                            <td>Marți</td>
+                            <td>09:00 - 13:00</td>
+                            <td>13:00 - 14:00</td>
+                            <td>14:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>L-V</td>
+                            <td>Miercuri</td>
+                            <td>09:00 - 13:00</td>
+                            <td>13:00 - 14:00</td>
+                            <td>14:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>L-V</td>
+                            <td>Joi</td>
+                            <td>09:00 - 13:00</td>
+                            <td>13:00 - 14:00</td>
+                            <td>14:00 - 18:00</td>
+                        </tr>
+                        <tr>
+                            <td>L-V</td>
+                            <td>Vineri</td>
+                            <td>09:00 - 13:00</td>
+                            <td>13:00 - 14:00</td>
+                            <td>14:00 - 16:30</td>
+                        </tr>
+                        <tr>
+                            <td>S-D</td>
+                            <td rowspan="2">Weekend</td>
+                            <td>Sâmbătă</td>
+                            <td>10:00 - 14:00</td>
+                            <td>Fără pauză</td>
+                            <td>Doar preluare online</td>
+                        </tr>
+                        <tr>
+                            <td>S-D</td>
+                            <td>Duminică</td>
+                            <td>Închis</td>
+                            <td>-</td>
+                            <td>Doar preluare online</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="6">Site-ul primește comenzi 24/7. Orarul de mai sus este valabil exclusiv
+                                pentru asistența telefonică și predarea fizică a coletelor către firmele de curierat.
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+                </div>
+                </section>
+                <section id="certificat-preview">
+                    <h2>Certificat de Garanție și Autenticitate</h2>
+                    <p>Mai jos puteți vedea certificatul care însoțește fiecare bijuterie S&C:</p>
+                    <embed src="/resurse/documente/Certificat_Garantie.pdf" type="application/pdf"/>
+                </section>
+            
+            <section id="fig1">
+                <figure class="fg-img">
+                    <img src="/resurse/imagini/Bratari_albastre.jpeg" alt="Bratari_albastre">
+                    <figcaption>Bratari albastre</figcaption>
+                </figure>
+            </section>
+            <section id="fig2">
+                <figure class="fg-img">
+                    <img src="/resurse/imagini/Bratari_mov.jpeg" alt="Bratari_mov">
+                    <figcaption>Bratari mov</figcaption>
+                </figure>
+            </section>
+            <section id="fig3">
+                <figure class="fg-img">
+                    <img src="/resurse/imagini/Bratari_inimi.jpeg" alt="Bratari_inimi">
+                    <figcaption>Bratari inimi</figcaption>
+                </figure>
+            </section>
+            <section id="fig4">
+                <figure class="fg-img">
+                    <img src="/resurse/imagini/Bratari_pietre_semipretioase.jpeg" alt="Bratari_pietre_semipretioase">
+                    <figcaption>Bratari pietre semipretioase</figcaption>
+                </figure>
+            </section>
+            <section id="anunturi">
+                <h2>Evenimente și Anunțuri</h2>
+                <ul>
+                    <li>
+                        <time datetime="2026-02-24T10:00">24 februarie 2026, ora 10:00</time>, <b>Pregătiri de
+                            Mărțișor</b> - Ne pregătim intens pentru luna mărțișorului! Fiți cu ochii pe noi pentru
+                        noile modele de broșe și brățări cu șnur roșu.
+                    </li>
+                    <li>
+                        <time datetime="2026-01-15T12:00">15 ianuarie 2026, ora 12:00</time>, <b>Rezultate Studiu
+                            S&C</b> - <strong>Studiile au arătat că achiziționarea unei bijuterii noi crește nivelul de
+                            fericire. E adevărat că sunt doar studiile noastre, dar detaliile nu mai contează atunci
+                            când strălucești.</strong>
+                    </li>
+                    <li>
+                        <time datetime="2026-01-01T00:00">1 ianuarie 2026, ora 00:00</time>, <b>Revelion S&C</b> - Un an
+                        nou fericit, plin de momente prețioase și amintiri de neuitat alături de S&C!
+                    </li>
+                    <li>
+                        <time datetime="2025-11-15T08:00">15 noiembrie 2025, ora 08:00</time>, <b>Black Friday</b> - Dăm
+                        startul reducerilor de toamnă la toată colecția din aur de 14K.
+                    </li>
+                    <li>
+                        <time datetime="2025-09-01T14:30">1 septembrie 2025, ora 14:30</time>, <b>Lansare Colecție
+                            Nouă</b> - Am lansat noua colecție de brățări <i lang="en">handmade</i> cu pietre
+                        semiprețioase.
+                    </li>
+                    <li>
+                        <time datetime="2025-06-05T11:00">5 iunie 2025, ora 11:00</time>, <b>Sfatul Zilei</b> - Nu avem
+                        noutăți majore, doar voiam să vă reamintim că un accesoriu bine ales vă poate schimba toată
+                        ziua.
+                    </li>
+                    <li>
+                        <time datetime="2025-04-10T16:00">10 aprilie 2025, ora 16:00</time>, <b>Extindere Portofoliu</b>
+                        - Am adăugat o nouă secțiune de inele și verighete pe site.
+                    </li>
+                    <li>
+                        <time datetime="2025-02-10T09:00">10 februarie 2025, ora 09:00</time>, <b>Valentine's Day</b> -
+                        Am pregătit seturi speciale de bijuterii din argint pentru Valentine's Day.
+                    </li>
+                    <li>
+                        <time datetime="2024-11-20T10:00">20 noiembrie 2024, ora 10:00</time>, <b>Serviciu Nou</b> - Am
+                        introdus serviciul premium de împachetare pentru cadouri surpriză livrate direct la domiciliu.
+                    </li>
+                    <li>
+                        <time datetime="2024-10-01T09:00">1 octombrie 2024, ora 09:00</time>, <b>Marea Deschidere</b> -
+                        Magazinul online S&C este oficial deschis! Bine ați venit în universul nostru.
+                    </li>
+                </ul>
+            </section>
             <section id="index-intrebari">
-    <h2>Întrebări frecvente</h2>
-    
-    <details><summary>Bijuteriile dumneavoastră provoacă alergii ale pielii?</summary>
-        <p>Nu! Folosim doar metale prețioase (aur de 14K, argint fin 925) și materiale hipoalergenice pentru colecțiile noastre <i lang="en">handmade</i>.</p>
-    </details>
-    
-    <details><summary>Bijuteriile din argint își schimbă culoarea în contact cu apa sau parfumul?</summary>
-        <p>Argintul poate oxida natural în timp, dar își recapătă strălucirea imediat cu laveta specială de curățare pe care o primiți cadou la fiecare comandă!</p>
-    </details>
-    
-    <details><summary>Realizați brățări <i lang="en">handmade</i> pe dimensiuni personalizate?</summary>
-        <p>Sigur că da! Vă rugăm să menționați dimensiunea exactă a încheieturii în secțiunea de observații la plasarea comenzii.</p>
-    </details>
-    
-    <details><summary>Sunteți cumva responsabili pentru dependența iremediabilă de a cumpăra accesorii noi și strălucitoare?</summary>
-        <p>Ne rezervăm dreptul de a nu răspunde la această întrebare; mulțumim pentru înțelegere!</p>
-    </details>
-</section>
+                <h2>Întrebări frecvente</h2>
 
-<section id="resurse-handmade">
-    <h2>Despre Handmade și conceptul DIY</h2>
-    
-    <p>
-        Suntem pasionați de unicitatea fiecărei piese pe care o creăm. Dacă doriți să aprofundați istoria și valoarea obiectelor lucrate manual, vă invităm să citiți acest articol:<br>
-        <a href="https://ro.wikipedia.org/wiki/Artizanat" target="_blank">Aflați mai multe despre arta artizanatului și produsele handmade</a>.
-    </p>
+                <details>
+                    <summary>Bijuteriile dumneavoastră provoacă alergii ale pielii?</summary>
+                    <p>Nu! Folosim doar metale prețioase (aur de 14K, argint fin 925) și materiale hipoalergenice pentru
+                        colecțiile noastre <i lang="en">handmade</i>.</p>
+                </details>
 
-    <p>
-        Conceptul de <strong>DIY (Do It Yourself)</strong> a luat o amploare uriașă în zona de fashion și accesorii. Puteți explora o secțiune dedicată direct pe Wikipedia la următoarea adresă:<br>
-        <a href="https://en.wikipedia.org/wiki/Do_it_yourself#Fashion">
-            https://en.wikipedia.org/wiki/Do_it_yourself#<wbr>Fashion
-        </a>
-    </p>
+                <details>
+                    <summary>Bijuteriile din argint își schimbă culoarea în contact cu apa sau parfumul?</summary>
+                    <p>Argintul poate oxida natural în timp, dar își recapătă strălucirea imediat cu laveta specială de
+                        curățare pe care o primiți cadou la fiecare comandă!</p>
+                </details>
 
-    <p>
-        Vreți să vedeți mai îndeaproape detaliile împletiturilor noastre manuale? Dă click direct pe poza de mai jos:<br>
-        <a href="/resurse/imagini/Bratari_albastre.jpeg">
-            <img src="/resurse/imagini/Bratari_albastre.jpeg" alt="Bratari handmade albastre detaliu" width="150">
-        </a>
-    </p>
+                <details>
+                    <summary>Realizați brățări <i lang="en">handmade</i> pe dimensiuni personalizate?</summary>
+                    <p>Sigur că da! Vă rugăm să menționați dimensiunea exactă a încheieturii în secțiunea de observații
+                        la plasarea comenzii.</p>
+                </details>
 
-    <p>
-        Avem și un mic cadou! Pentru că susținem inițiativa voastră de a lucra cu mărgele acasă, vă lăsăm o poză cu un mărțișor trandafir drept referință:<br>
-        <a href="/resurse/imagini/Martisor_trandafir.jpeg" download="Model_Inspiratie_DIY.jpeg">Descărcați imaginea pentru inspirație (DIY)</a>
-    </p>
-</section>
+                <details>
+                    <summary>Sunteți cumva responsabili pentru dependența iremediabilă de a cumpăra accesorii noi și
+                        strălucitoare?</summary>
+                    <p>Ne rezervăm dreptul de a nu răspunde la această întrebare; mulțumim pentru înțelegere!</p>
+                </details>
+            </section>
 
+            <section id="resurse-handmade">
+                <h2>Despre Handmade și conceptul DIY</h2>
+
+                <p>
+                    Suntem pasionați de unicitatea fiecărei piese pe care o creăm. Dacă doriți să aprofundați istoria și
+                    valoarea obiectelor lucrate manual, vă invităm să citiți acest articol:<br>
+                    <a href="https://ro.wikipedia.org/wiki/Artizanat" target="_blank">Aflați mai multe despre arta
+                        artizanatului și produsele handmade</a>.
+                </p>
+
+                <p>
+                    Conceptul de <strong>DIY (Do It Yourself)</strong> a luat o amploare uriașă în zona de fashion și
+                    accesorii. Puteți explora o secțiune dedicată direct pe Wikipedia la următoarea adresă:<br>
+                    <a href="https://en.wikipedia.org/wiki/Do_it_yourself#Fashion">
+                        https://en.wikipedia.org/wiki/Do_it_yourself#<wbr>Fashion
+                    </a>
+                </p>
+
+                <p>
+                    Vreți să vedeți mai îndeaproape detaliile împletiturilor noastre manuale? Dă click direct pe poza de
+                    mai jos:<br>
+                    <a href="/resurse/imagini/Bratari_albastre.jpeg">
+                        <img src="/resurse/imagini/Bratari_albastre.jpeg" alt="Bratari handmade albastre detaliu"
+                            width="150">
+                    </a>
+                </p>
+
+                <p>
+                    Avem și un mic cadou! Pentru că susținem inițiativa voastră de a lucra cu mărgele acasă, vă lăsăm o
+                    poză cu un mărțișor trandafir drept referință:<br>
+                    <a href="/resurse/imagini/Martisor_trandafir.jpeg" download="Model_Inspiratie_DIY.jpeg">Descărcați
+                        imaginea pentru inspirație (DIY)</a>
+                </p>
+            </section>
+            <section id="galerie-statica">
+                <h2>Galerie</h2>
+                <div id="grid-galerie">
+                    <figure>
+                        <div>
+                            <img src="/resurse/imagini/Bratari_7_chakre.jpeg" alt="Bratari_7_chakre" width="400">
+                        </div>
+                        <figcaption>Bratari 7 chakre</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/resurse/imagini/Lanticuri.jpeg" alt="Lanticuri" width="400">
+                        <figcaption>Lanticuri</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/resurse/imagini/Lantic_cheie.jpeg" alt="Lantic_cheie" width="400">
+                        <figcaption>Lantic cheie</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="/resurse/imagini/Martisor_fluture.jpeg" alt="Martisor fluture" width="400">
+                        <figcaption>Martisor fluture</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="bratari-handmade">
+                <h2>Bratari handmade</h2>
+                <p>Dacă doriți să vă faceți singuri bratarile (dar de ce ati face asta când ne aveți pe noi??? + noi va
+                    oferim si un aterlier cu o multitudine de materiale daca chiar va doriti ceva de lucru)
+                    vă recomandăm următoarele videoclipuri care explica cum se realizati bratari facute manual, simple,
+                    pe
+                    care sperăm să le încercați, să vedeți cât e de <s>ușor</s> să le faceți,
+                    să vă dați în final bătuți și să veniți să cumpărați de la noi &#128512;. Mulțumim! &#128513;</p>
+                <div class="container-iframe">
+                    <div class="taburi-iframe">
+                        <a href="https://www.youtube.com/embed/C2XX_PnW8bg" target="ifr-video">Easy Thread Bracelet
+                            Ideas</a>
+                        <a href="https://www.youtube.com/embed/9hX-_UvWwrk?list=PLsgCvAoTrpYq3i9obqCuVmDU6cogQnRon"
+                            target="ifr-video">Bratari din margele</a>
+                        <a href="https://www.youtube.com/embed/8CLD5KVYnaE" target="ifr-video">Bratara cu
+                            Charm</a><br />
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LE4qVbAvQwA" name="ifr-video"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
         </div>
-        <section id="galerie-statica">
-            <h2>Galerie</h2>
-            <div id="grid-galerie">
-                <!-- <% for (let imag of local.imagini){%>
-                <figure>
-                    <picture>
-                        <source srcset="<%- imag.fisier_mediu %>" media="(max-width:1100px)">
-                        <img src="<%- imag.fisier %>" width="400">
-                        </picture>
-                <figcaption><%- imag.descirere %></figcaption>
-                </figure>
-                %>}%> -->
-
-                <figure>
-                    <div>
-                        <img src="/resurse/imagini/Bratari_7_chakre.jpeg" alt="Bratari_7_chakre" width="400"></div>
-                <figcaption>Bratari 7 chakre</figcaption>
-                </figure>
-                <figure>
-                <img src="/resurse/imagini/Lanticuri.jpeg" alt="Lanticuri" width="400">
-                <figcaption>Lanticuri</figcaption>
-                </figure>
-                <figure>
-                <img src="/resurse/imagini/Lantic_cheie.jpeg" alt="Lantic_cheie" width="400">
-                <figcaption>Lantic cheie</figcaption>
-                </figure>
-                <figure>
-                <img src="/resurse/imagini/Martisor_fluture.jpeg" alt="Martisor fluture" width="400">
-                <figcaption>Martisor fluture</figcaption>
-                </figure>
-            </div>
-        </section>
-        <section id="Bratari_handmade">
-    <h2>Bratari handmade</h2>
-    <p>Dacă doriți să vă faceți singuri bratarile (dar de ce ati face asta când ne aveți pe noi??? + noi va oferim si un aterlier cu o multitudine de materiale daca chiar va doriti ceva de lucru) 
-        vă recomandăm următoarele videoclipuri care explica cum se realizati bratari facute manual, simple, pe care sperăm să le încercați, să vedeți cât e de <s>ușor</s> să le faceți, 
-        să vă dați în final bătuți și să veniți să cumpărați de la noi &#128512;. Mulțumim! &#128513;</p>
-    <div class="container-iframe">
-        <div class="taburi-iframe">
-            <a href="https://www.youtube.com/embed/C2XX_PnW8bg" target="ifr-video">Easy Thread Bracelet Ideas</a>
-            <a href="https://www.youtube.com/embed/9hX-_UvWwrk?list=PLsgCvAoTrpYq3i9obqCuVmDU6cogQnRon" target="ifr-video">Bratari din margele</a>
-            <a href="https://www.youtube.com/embed/8CLD5KVYnaE" target="ifr-video">Bratara cu Charm</a><br/>
-        </div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/LE4qVbAvQwA" name="ifr-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-</section>
-<section id="statistici-magazin">
-    <h2>Informații și Statistici</h2>
-    
-    <div class="statistica">
-        <p>
-            <strong>Rating-ul clienților pentru Colecția de Aur 14K:</strong> 4.8 din 5 stele. <br>
-            Suntem mândri de calitatea pe care o oferim!
-        </p>
-        <meter min="0" max="5" low="2.5" high="4" optimum="5" value="4.8" title="Rating: 4.8/5">
-            4.8/5
-        </meter>
-    </div>
-
-    <br>
-
-    <div class="statistica">
-        <p>
-            <strong>Stoc Colecția Mărțișoare 2026:</strong> Grăbiți-vă, stocul se epuizează rapid!
-        </p>
-        <meter min="0" max="100" low="20" high="80" optimum="100" value="12" title="Stoc limitat: 12 bucăți rămase">
-            12%
-        </meter>
-    </div>
-</section>
     </main>
 <footer>
     <%- include("../fragmente/footer.ejs") %>

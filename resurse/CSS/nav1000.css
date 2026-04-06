@@ -1,3 +1,11 @@
-.text-icon{
-    display: none;
+ul.meniu {
+    font-size: 0.85rem; 
+}
+
+ul.meniu > li .text-icon {
+    display: none; 
+}
+
+ul.meniu > li > a .text-icon {
+    display: none; 
 }

@@ -1,20 +1,62 @@
-<header>
-        <h1>Magazin de bijuterii S&C</h1>
-        <img src="/resurse/imagini/bijuterii.png" alt="brijuterii" />
-        <nav>
-            <ul class="meniu">
-                <li>Acasa
-                    <ul>
-                        <li>
-                            <a href="#welcome">Bine ati venit!</a>
-                        </li>
-                        <li>
-                            <a href="#promotii">Promotii!</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>Despre</li>
-                <li>Inregistrare</li>
-            </ul>
-        </nav>
-    </header>
+<h1 class="titlu-site">Magazin de bijuterii S&C <i class="fa-solid fa-crown fa-beat"></i></h1>
+
+<p>IP-ul tău este: <%= locals.ip %></p>
+
+<nav>
+<label id="hamburger" for="ch-meniu">
+            <span></span>
+            <span></span>
+            <span></span>   
+        </label>
+        <input type="checkbox" id="ch-meniu"/>
+        <ul class="meniu">
+            <li>
+                <div class="imag-icon"><i class="fa-solid fa-house"></i></div>
+                <div class="text-icon">Acasa</div>
+                <ul>
+                    <li><a href="#welcome">Bine ati venit</a></li>
+                    <li><a href="#promotii">Promotii</a></li>
+                    <li><a href="#anunturi">Anunturi</a></li>
+                    <li><a href="#produse">Oferta</a></li>
+                    <li><a href="#orar">Orar</a></li>
+                    <li><a href="#index-intrebari">Întrebări</a></li>
+                    <li><a href="#statistici-magazin">Statistici</a></li>
+                    <li><a href="#resurse-handmade">Handmade si DIY</a></li>
+                    <li><a href="#bratari-handmade">Realizare bratari</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                <div class="imag-icon"><i class="fa-solid fa-user-pen"></i></div>
+                <div class="text-icon">Inregistrare</div> 
+            </a>
+            </li>
+            <li>
+                <div class="imag-icon"><i class="fa-solid fa-bookmark"></i></div>
+                <div class="text-icon"><a href="/despre" style="color:inherit; text-decoration:none;">Despre</a></div>
+                <ul>                        
+                    <li><a href="/despre#prezentare">Prezentare</a></li>
+                    <li><a href="/despre#istoric">Istoric</a></li>
+                    <li><a href="/despre#motivatie">Motivatie</a></li>
+                    <li><a href="/despre#galerie">Galerie</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="imag-icon"><i class="fa-solid fa-ring"></i></div>
+                <div class="text-icon">Bijuterii</div>
+                <ul>
+                    <li><a href="#">Bratari</a></li>
+                    <li><a href="#">Lanticuri</a></li>
+                    <li><a href="#">Cercei</a></li>
+                    <li><a href="#">Inele</a></li>
+                </ul>
+            
+            </li>
+            <li>
+                <a href="address">
+                <div class="imag-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="text-icon">Contact</div>
+            </a>
+        </li>
+        </ul>
+</nav>

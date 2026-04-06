@@ -348,121 +348,48 @@ math mn {
 
 
 
-@media print {
-    @page :left {
-        margin-left: 3cm;
-        margin-right: 1cm;
-    }
-    @page :right {
-        margin-left: 1cm;
-        margin-right: 3cm;
-    }
 
-    body {
-        background-color: white !important;
-        color: black !important;
-        position: relative;
-    }
+a:visited {
+    color: var(--culoare-titlu);
+}
 
-    header, footer, #grid-pagina > *, p {
-        border: none !important;
-        box-shadow: none !important;
-        background: transparent !important;
-    }
+a[href^="http"]::before {
+    content: "⮳";
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 0.3em;
+    transition: color 0.3s ease;
+    vertical-align: middle;
+}
 
-    #banner-printare {
-        display: block !important;
-        position: absolute;
-        top: 26cm; 
-        left: 15%; 
-        width: 70%;
-        border: 4px inset black !important;
-        text-align: center;
-        padding: 10px;
-        box-sizing: border-box;
-        font-weight: bold;
-    }
+a[href^="http"]:hover::before {
+    color: var(--culoare-border2);
+}
 
-    img, video, iframe, embed, picture, figure, figcaption, #link-top, .imag-icon, #hamburger, #ch-meniu {
-        display: none !important;
-    }
+main a:not([href^="#"]) {
+    position: relative;
+    text-decoration: none;
+    color: var(--culoare-text);
+    background-image: radial-gradient(
+        circle, 
+        var(--culoare-contur-deschis) 0%, 
+        var(--culoare-contur-deschis) 40%, 
+        transparent 80%, 
+        transparent 100%
+    );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0% 0%;
+    transition: background-size 0.5s ease-out;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
 
-    #grid-pagina {
-        display: block !important;
-    }
-    #grid-pagina > * {
-        display: block !important;
-        page-break-inside: avoid;
-        break-inside: avoid;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #ccc !important; 
-    }
+main a:not([href^="#"]):hover {
+    background-size: 100% 100%;
+}
 
-    a {
-        color: black !important;
-        text-decoration: none !important;
-        height: auto !important;
-    }
-
-    h1.titlu-site {
-        text-align: center !important;
-        margin-top: 0;
-    }
-
-    ul.meniu {
-        display: block !important;
-        position: static !important;
-        padding-left: 40px !important;
-        list-style-type: disc !important;
-        height: auto !important;
-    }
-    
-    ul.meniu > li {
-        display: list-item !important;
-        text-align: left !important;
-        border: none !important;
-        padding: 5px 0 !important;
-        
-        height: auto !important; 
-        line-height: normal !important; 
-        width: auto !important;
-    }
-
-    ul.meniu ul {
-        display: none !important;
-    }
-
-    nav {
-        page-break-after: always;
-        break-after: page;
-    }
-
-    footer {
-        page-break-before: always;
-        break-before: page;
-    }
-
-    body::after {
-        content: "Monceanu \A Valentina";
-        white-space: pre-wrap; 
-        
-        position: fixed;
-        bottom: 0.5cm;
-        right: 0.5cm;
-        
-        width: 4cm;
-        height: 1cm;
-        border: 3px solid black;
-        border-radius: 10px;
-        
-        text-align: center;
-        font-weight: bold;
-        opacity: 0.4;
-        
-        font-size: 12px;
-        line-height: 1.2;
-        padding-top: 2px;
-        box-sizing: border-box;
-        z-index: 9999;
-    }
+a:active {
+    outline: 2px dashed var(--culoare-contur);
+    outline-offset: 2px;
 }

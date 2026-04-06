@@ -58,9 +58,9 @@ nav {
 #hamburger span:nth-child(3) {
   top: 26px;
 }
-#hamburger span {
-  /* bonus 3 */
-}
+  
+/* bonus 3 */
+
 #hamburger span:nth-child(1) {
   animation-delay: 300ms;
 }

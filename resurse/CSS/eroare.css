@@ -1,0 +1,16 @@
+#err-imag img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#err-coloane {
+    text-align: center;
+    padding: 50px;
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

@@ -1,0 +1,27 @@
+#video-vtt {
+    width: 80%;
+    min-width: 300px;
+    max-width: 750px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+#container-video-vtt {
+    width: 100%;
+    text-align: center;
+}
+
+#video-vtt::cue {
+    background-color: var(--culoare-fundal);
+    color: var(--culoare-text);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 700px) {
+    #video-vtt::cue {
+        font-size: 0.9rem;
+    }
+}

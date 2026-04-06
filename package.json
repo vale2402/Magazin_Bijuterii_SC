@@ -1,18 +1,27 @@
 {
   "name": "magazinbijuterii",
   "version": "1.0.0",
-  "description": "",
+  "description": "magazin online de bijuterii",
   "license": "ISC",
-  "author": "",
+  "author": "Monceanu Mihaela-Valentina",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "bijuterii",
+    "bratari",
+    "inele de aur",
+    "cadouri pentru femei",
+    "handmade",
+    "cercei"
+  ],
   "dependencies": {
     "bootstrap": "^5.3.8",
     "ejs": "^5.0.1",
     "express": "^5.2.1",
+    "sass": "^1.99.0",
     "sharp": "^0.34.5"
   }
 }
