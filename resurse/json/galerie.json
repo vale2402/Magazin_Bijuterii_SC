@@ -1,0 +1,264 @@
+{
+	"cale_galerie":"resurse/imagini/galerie",
+	"imagini": [
+		{
+			"cale_imagine":"bratara_aur.jpg",
+            "titlu":"Bratara aur",
+			"descriere":"Bratara din aur de 24K",
+			"sfert_ora":"1"
+		},
+		{
+			"cale_imagine":"bratara_inimi.jpg",
+            "titlu":"Bratara cu inimi",
+			"descriere":"Bratara cu inimi din aur de 24K",
+			"sfert_ora":"1"
+		},
+		{
+			"cale_imagine":"bratara_neagra.jpg",
+            "titlu":"Bratara neagra Channel",
+			"descriere":"Bratara neagra tip Channel din aur de 24K",
+			"sfert_ora":"1"
+		},
+        {
+			"cale_imagine":"bratara_perle.jpg",
+            "titlu":"Bratara perle",
+			"descriere":"Bratara din perle naturale",
+			"sfert_ora":"1",
+			"licenta": "CC-BY",
+    		"autor": "KULTHO",
+    		"link_autor": "https://www.kultho.ro/colier-utopia_aqua_aur_18_kt_cu_perle-FW0W-pb191303.html?ref=bijuterii&filters=L2JpanV0ZXJpaS9maWx0cmUvZ2Vtc3RvbmU9cGVybGFfZGVfY3VsdHVyYS4zMDtfcmVmPWdlbXN0b25lLnBlcmxhX2RlX2N1bHR1cmEuMzAv"
+		},
+        {
+			"cale_imagine":"Bratari_7_chakre.jpg",
+            "titlu":"Bratara 7 chakre",
+			"descriere":"Bratara cu 7 pietre semipretioase diferite",
+			"sfert_ora":"1"
+		},
+        {
+			"cale_imagine":"cruce.jpg",
+            "titlu":"Lantic cruce",
+			"descriere":"Lantic cu pandantiv in forma de cruce din aur de 24K",
+			"sfert_ora":"1"
+		},
+        {
+			"cale_imagine":"lantic_CC.jpg",
+            "titlu":"Lantic Channel",
+			"descriere":"Lantic cu pandantiv in forma de Channel din aur de 24K",
+			"sfert_ora":"1"
+		},
+        {
+			"cale_imagine":"Lantic_cheie.jpg",
+            "titlu":"Lantic cheie",
+			"descriere":"Lantic cu pandantiv in forma de cheie din aur de 24K",
+			"sfert_ora":"1"
+		},
+        {
+			"cale_imagine":"Lanticuri.jpg",
+            "titlu":"Lanticuri",
+			"descriere":"Lanticuri din aur de 24K",
+			"sfert_ora":"1"
+		},
+        {
+			"cale_imagine":"Martisor_fluture.jpg",
+            "titlu":"Martisor fluture",
+			"descriere":"Martisor in forma de fluture cu pietre albastre",
+			"sfert_ora":"1"
+		},
+        {
+			"cale_imagine":"cercei_big_loops.jpg",
+            "titlu":"Cercei loop",
+			"descriere":"Cercei din aur de 24K",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_cu_gauri.jpg",
+            "titlu":"Cercei loop mici cu model",
+			"descriere":"Cercei loop mici cu model din aur de 24K",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_cu_piatra.jpg",
+            "titlu":"Cercei cu diamant",
+			"descriere":"Cercei din aur de 24K cu diamant",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_cub.jpg",
+            "titlu":"Cercei lungi cub",
+			"descriere":"Cercei lungi din aur de 24K si cub cu diamante",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_fluturi.jpg",
+            "titlu":"Cercei fluturi",
+			"descriere":"Cercei fluturi din aur de 24K si cu perle",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_inima.jpg",
+            "titlu":"Cercei in forma de inima",
+			"descriere":"Cercei in forma de inima din aur de 24K",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_inima_jumate.jpg",
+            "titlu":"Cercei in forma de inima cu pietre pe jumatate",
+			"descriere":"Cercei din aur de 24K in forma de inima cu diamante pe jumatate",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_inima_pietre.jpg",
+            "titlu":"Cercei in forma de inima cu diamante",
+			"descriere":"Cercei din aur de 24K in forma de inima cu diamante",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_lungi.jpg",
+            "titlu":"Cercei lungi cu cerc si diamant in mijloc",
+			"descriere":"Cercei lungi cu cerc si diamant in mijloc din aur de 24K",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_mici_cu_model.jpg",
+            "titlu":"Cercei mici cu model si diamante pe diagonala",
+			"descriere":"Cercei mici cu model si diamante pe diagonala din aur de 24K",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_rotunzi_pietre.jpg",
+            "titlu":"Cercei rotunzi cu diamante",
+			"descriere":"Cercei rotunzi cu diamante din aur de 24K",
+			"sfert_ora":"2"
+		},
+        {
+			"cale_imagine":"cercei_spirala.jpg",
+            "titlu":"Cercei spirala cu diamante",
+			"descriere":"Cercei spirala cu diamante din aur de 24K",
+			"sfert_ora":"2"
+		},
+		{
+			"cale_imagine":"bratara_aur.jpg",
+            "titlu":"Bratara aur",
+			"descriere":"Bratara din aur de 24K",
+			"sfert_ora":"3"
+		},
+		{
+			"cale_imagine":"bratara_inimi.jpg",
+            "titlu":"Bratara cu inimi",
+			"descriere":"Bratara cu inimi din aur de 24K",
+			"sfert_ora":"3"
+		},
+		{
+			"cale_imagine":"bratara_neagra.jpg",
+            "titlu":"Bratara neagra Channel",
+			"descriere":"Bratara neagra tip Channel din aur de 24K",
+			"sfert_ora":"3"
+		},
+        {
+			"cale_imagine":"bratara_perle.jpg",
+            "titlu":"Bratara perle",
+			"descriere":"Bratara din perle naturale",
+			"sfert_ora":"3",
+			"licenta": "CC-BY",
+    		"autor": "KULTHO",
+    		"link_autor": "https://www.kultho.ro/colier-utopia_aqua_aur_18_kt_cu_perle-FW0W-pb191303.html?ref=bijuterii&filters=L2JpanV0ZXJpaS9maWx0cmUvZ2Vtc3RvbmU9cGVybGFfZGVfY3VsdHVyYS4zMDtfcmVmPWdlbXN0b25lLnBlcmxhX2RlX2N1bHR1cmEuMzAv"
+		},
+        {
+			"cale_imagine":"Bratari_7_chakre.jpg",
+            "titlu":"Bratara 7 chakre",
+			"descriere":"Bratara cu 7 pietre semipretioase diferite",
+			"sfert_ora":"3"
+		},
+		{
+			"cale_imagine":"cercei_big_loops.jpg",
+            "titlu":"Cercei loop",
+			"descriere":"Cercei din aur de 24K",
+			"sfert_ora":"3"
+		},
+        {
+			"cale_imagine":"cercei_cu_gauri.jpg",
+            "titlu":"Cercei loop mici cu model",
+			"descriere":"Cercei loop mici cu model din aur de 24K",
+			"sfert_ora":"3"
+		},
+        {
+			"cale_imagine":"cercei_cu_piatra.jpg",
+            "titlu":"Cercei cu diamant",
+			"descriere":"Cercei din aur de 24K cu diamant",
+			"sfert_ora":"3"
+		},
+        {
+			"cale_imagine":"cercei_cub.jpg",
+            "titlu":"Cercei lungi cub",
+			"descriere":"Cercei lungi din aur de 24K si cub cu diamante",
+			"sfert_ora":"3"
+		},
+        {
+			"cale_imagine":"cercei_fluturi.jpg",
+            "titlu":"Cercei fluturi",
+			"descriere":"Cercei fluturi din aur de 24K si cu perle",
+			"sfert_ora":"3"
+		},
+		{
+			"cale_imagine":"cruce.jpg",
+            "titlu":"Lantic cruce",
+			"descriere":"Lantic cu pandantiv in forma de cruce din aur de 24K",
+			"sfert_ora":"4"
+		},
+        {
+			"cale_imagine":"lantic_CC.jpg",
+            "titlu":"Lantic Channel",
+			"descriere":"Lantic cu pandantiv in forma de Channel din aur de 24K",
+			"sfert_ora":"4"
+		},
+        {
+			"cale_imagine":"Lantic_cheie.jpg",
+            "titlu":"Lantic cheie",
+			"descriere":"Lantic cu pandantiv in forma de cheie din aur de 24K",
+			"sfert_ora":"4"
+		},
+        {
+			"cale_imagine":"Lanticuri.jpg",
+            "titlu":"Lanticuri",
+			"descriere":"Lanticuri din aur de 24K",
+			"sfert_ora":"4"
+		},
+        {
+			"cale_imagine":"Martisor_fluture.jpg",
+            "titlu":"Martisor fluture",
+			"descriere":"Martisor in forma de fluture cu pietre albastre",
+			"sfert_ora":"4"
+		},
+		{
+			"cale_imagine":"cercei_inima_pietre.jpg",
+            "titlu":"Cercei in forma de inima cu diamante",
+			"descriere":"Cercei din aur de 24K in forma de inima cu diamante",
+			"sfert_ora":"4"
+		},
+        {
+			"cale_imagine":"cercei_lungi.jpg",
+            "titlu":"Cercei lungi cu cerc si diamant in mijloc",
+			"descriere":"Cercei lungi cu cerc si diamant in mijloc din aur de 24K",
+			"sfert_ora":"4"
+		},
+        {
+			"cale_imagine":"cercei_mici_cu_model.jpg",
+            "titlu":"Cercei mici cu model si diamante pe diagonala",
+			"descriere":"Cercei mici cu model si diamante pe diagonala din aur de 24K",
+			"sfert_ora":"4"
+		},
+        {
+			"cale_imagine":"cercei_rotunzi_pietre.jpg",
+            "titlu":"Cercei rotunzi cu diamante",
+			"descriere":"Cercei rotunzi cu diamante din aur de 24K",
+			"sfert_ora":"4"
+		},
+        {
+			"cale_imagine":"cercei_spirala.jpg",
+            "titlu":"Cercei spirala cu diamante",
+			"descriere":"Cercei spirala cu diamante din aur de 24K",
+			"sfert_ora":"4"
+		}
+
+	]
+}

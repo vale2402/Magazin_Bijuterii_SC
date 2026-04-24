@@ -123,7 +123,6 @@ header {
     height: 70%;
 }
 
-
 header, footer, #grid-pagina > * {
     gap:var(--spatiu-grid);
     border: 1px solid var(--culoare-contur); 
@@ -348,12 +347,11 @@ math mn {
 
 
 
-
 a:visited {
     color: var(--culoare-titlu);
 }
 
-a[href^="http"]::before {
+main a[href^="http"]:not(.taburi-iframe a)::before {
     content: "⮳";
     display: inline-block;
     font-size: 1.5em;
@@ -362,16 +360,15 @@ a[href^="http"]::before {
     vertical-align: middle;
 }
 
-a[href^="http"]:hover::before {
+main a[href^="http"]:not(.taburi-iframe a):hover::before {
     color: var(--culoare-border2);
 }
 
-main a:not([href^="#"]) {
+main a:not([href^="#"]):not(.taburi-iframe a) {
     position: relative;
     text-decoration: none;
     color: var(--culoare-text);
-    background-image: radial-gradient(
-        circle, 
+    background-image: radial-gradient( 
         var(--culoare-contur-deschis) 0%, 
         var(--culoare-contur-deschis) 40%, 
         transparent 80%, 
@@ -380,16 +377,17 @@ main a:not([href^="#"]) {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 0% 0%;
-    transition: background-size 0.5s ease-out;
-    padding: 2px 4px;
-    border-radius: 4px;
+    transition: background-size 0.5s ease-out,border-radius 0.3s ease;
+    padding: 2px 12px;
+    border-radius: 0px;
 }
 
-main a:not([href^="#"]):hover {
+main a:not([href^="#"]):not(.taburi-iframe a):hover {
     background-size: 100% 100%;
+    border-radius: 15px;
 }
 
 a:active {
-    outline: 2px dashed var(--culoare-contur);
+    outline: 2px solid var(--culoare-contur);
     outline-offset: 2px;
 }

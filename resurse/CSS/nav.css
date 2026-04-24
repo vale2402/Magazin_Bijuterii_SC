@@ -1,9 +1,4 @@
 nav {
-  --latime-buton: 160px;
-  --inaltime-buton: 65px;
-  --culoare-bara: #5a3d63;
-  --culoare-submeniu-hover-bg: var(--culoare-contur);
-  --culoare-submeniu-hover-text: var(--culoare-contur-deschis);
   background-color: var(--culoare-contur);
 }
 
@@ -100,5 +95,3 @@ ul.meniu li:hover {
   background-color: var(--culoare-fundal);
   color: black;
 }
-
-/*# sourceMappingURL=nav.css.map */

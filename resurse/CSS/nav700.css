@@ -58,9 +58,9 @@ nav {
 #hamburger span:nth-child(3) {
   top: 26px;
 }
-  
-/* bonus 3 */
-
+#hamburger span {
+  /* bonus 3 */
+}
 #hamburger span:nth-child(1) {
   animation-delay: 300ms;
 }
@@ -171,5 +171,3 @@ ul.meniu ul li:hover {
 ul.meniu ul li:hover > a {
   color: var(--culoare-submeniu-hover-text) !important;
 }
-
-/*# sourceMappingURL=nav700.css.map */

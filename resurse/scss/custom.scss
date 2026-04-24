@@ -1,0 +1,26 @@
+$font-family-sans-serif: 'Roboto Condensed', sans-serif !default;
+
+$h1-font-size: 2.8rem !default;
+$h2-font-size: 2.2rem !default;
+
+$primary: #6a4c93 !default; 
+$secondary: #b8860b !default;
+
+$border-radius: 1rem !default;
+
+$enable-gradients: true !default;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 700px,
+  lg: 1000px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.btn-primary {
+    color: #fff8e7 !important;
+}
